@@ -17,74 +17,84 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/xtended_settings_title" >
 
-        <!-- Status Bar -->
+        <!-- Device Part -->
+        <Preference
+            android:key="device_part"
+            android:title="@string/device_part_title"
+            android:summary="@string/device_part_summary">
+            <intent android:action="com.android.settings.action.EXTRA_SETTINGS"
+               android:targetPackage="com.oneplus.shit"
+               android:targetClass ="com.oneplus.shit.settings.ShitPanelSettings" />
+        </Preference>
+
+        <!-- Status Bar 
         <Preference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:fragment="com.xtended.xtensions.fragments.StatusBarSettings" 
-            android:icon="@drawable/ic_settings_statusbar"/>
+            android:icon="@drawable/ic_settings_statusbar"/> -->
 
-        <!-- Quick Settings panel -->
+        <!-- Quick Settings panel 
         <Preference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
             android:fragment="com.xtended.xtensions.fragments.QuickSettings"
-            android:icon="@drawable/ic_settings_quicksettings"/>
+            android:icon="@drawable/ic_settings_quicksettings"/> -->
 
-        <!-- Buttons -->
+        <!-- Buttons
         <Preference
             android:key="buttonsettings_category"
             android:title="@string/button_title"
             android:fragment="com.xtended.xtensions.fragments.ButtonSettings"
-            android:icon="@drawable/ic_settings_buttons"/>
+            android:icon="@drawable/ic_settings_buttons"/> -->
 
-        <!-- Navigation Bar -->
+        <!-- Navigation Bar
         <Preference
             android:key="navigationbar_category"
             android:title="@string/navbar_title"
             android:fragment="com.xtended.xtensions.fragments.NavbarSettings"
-            android:icon="@drawable/ic_settings_navbar"/>
+            android:icon="@drawable/ic_settings_navbar"/> -->
 
-        <!-- Gestures -->
+        <!-- Gestures 
         <Preference
             android:key="gestures_category"
             android:title="@string/gestures_title"
             android:fragment="com.xtended.xtensions.fragments.GestureSettings"
-            android:icon="@drawable/ic_settings_gesture"/>
+            android:icon="@drawable/ic_settings_gesture"/> -->
 
-        <!-- Lock Screen -->
+        <!-- Lock Screen
         <Preference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
             android:fragment="com.xtended.xtensions.fragments.LockScreenSettings"
-            android:icon="@drawable/ic_settings_lockscreens"/>
+            android:icon="@drawable/ic_settings_lockscreens"/> -->
 
-        <!-- Power Menu -->
+        <!-- Power Menu
         <Preference
             android:key="powermenu__category"
             android:title="@string/powermenu_title"
             android:fragment="com.xtended.xtensions.fragments.PowerMenuSettings"
-            android:icon="@drawable/ic_settings_powermenu"/>
+            android:icon="@drawable/ic_settings_powermenu"/> -->
 
-        <!-- Recents -->
+        <!-- Recents
         <Preference
             android:key="recents_category"
             android:title="@string/recents_title"
             android:fragment="com.xtended.xtensions.fragments.RecentsSettings"
-            android:icon="@drawable/ic_settings_recents"/>
+            android:icon="@drawable/ic_settings_recents"/> -->
 
-        <!-- Notifications -->
+        <!-- Notifications 
         <Preference
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:fragment="com.xtended.xtensions.fragments.NotificationSettings"
-            android:icon="@drawable/ic_settings_notification"/>
+            android:icon="@drawable/ic_settings_notification"/> -->
 
-        <!-- Misc -->
+        <!-- Misc
         <Preference
             android:key="misc_category"
             android:title="@string/misc_title"
             android:fragment="com.xtended.xtensions.fragments.MiscSettings"
-            android:icon="@drawable/ic_settings_miscs"/>
+            android:icon="@drawable/ic_settings_miscs"/>-->
 			
 </PreferenceScreen>
